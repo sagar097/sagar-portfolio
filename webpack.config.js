@@ -1,6 +1,7 @@
 //Author:Sagar Pawar
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 module.exports = {
  
     entry: [
@@ -70,13 +71,15 @@ module.exports = {
       
       },
     output: {
-      path: __dirname + '/dist/',
+      path: path.resolve(__dirname, 'build'),
       publicPath: '/',
       filename: 'bundle.js'
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        
+        new HtmlWebpackPlugin({
+          template: path.resolve('./build/index.html'),
+        }),
         // new HtmlWebpackPlugin({
         //   template: './dist/index.html',
         //   filename: './index.html',
@@ -85,9 +88,9 @@ module.exports = {
       ],
     devServer: {
       inline: true,
-      contentBase: './dist',
+      contentBase: './build',
       hot:true,
-      port:8093,
+      port:8092,
       historyApiFallback: true,
       open:true,
       watchContentBase: true,

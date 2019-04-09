@@ -62,7 +62,9 @@
   width: 50%;
   margin: auto;
 }
-
+.mdl-layout__drawer-button {
+  color: #337ab7 !important; 
+}
 .contact-list i {
   font-size: 66px;
   padding-right: 5rem;

@@ -52,15 +52,17 @@ class Projects extends React.Component {
           <AppBar position="static">
             <Tabs variant="fullWidth" value={value} onChange={this.handleChange}>
               <LinkTab label="React" href="page1" />
-              <LinkTab label="NodeJs" href="page2" />
-              <LinkTab label="Redux" href="page3" />
-              <LinkTab label="Webpack/Babel" href="page3" />
+              <LinkTab label="Webpack/Babel" href="page2" />
+              <LinkTab label="NodeJs" href="page3" />
+              <LinkTab label="Redux" href="page4" />            
             </Tabs>
           </AppBar>
+          
           {value === 0 && <TabContainer><ReactJs/></TabContainer>}
-          {value === 1 && <TabContainer><NodeJs/></TabContainer>}
-          {value === 2 && <TabContainer><Redux/></TabContainer>}
-          {value === 3 && <TabContainer><WebpackBabel/></TabContainer>}
+          {value === 1 && <TabContainer><WebpackBabel/></TabContainer>}
+          {value === 2 && <TabContainer><NodeJs/></TabContainer>}
+          {value === 3 && <TabContainer><Redux/></TabContainer>}
+        
         </div>
       </NoSsr>
     );

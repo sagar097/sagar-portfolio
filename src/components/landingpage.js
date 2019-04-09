@@ -26,7 +26,7 @@ class Landing extends Component {
 
           {/* LinkedIn */}
           <a href="https://www.linkedin.com/in/sagar-pawar-45b0a5115/" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-linkedin-square" aria-hidden="true" />
+            <i className="fab fa-linkedin"  />
           </a>
 
           {/* Github */}

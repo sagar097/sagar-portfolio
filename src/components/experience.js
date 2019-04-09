@@ -1,5 +1,5 @@
+import { Cell, Grid } from 'react-mdl';
 import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
 
 class Experience extends Component {
   render() {
@@ -11,6 +11,7 @@ class Experience extends Component {
         <Cell col={8}>
           <h4 style={{marginTop:'0px'}}>{this.props.jobName}</h4>
           <p>{this.props.jobDescription}</p>
+          <p>{this.props.work}</p>
         </Cell>
       </Grid>
     )

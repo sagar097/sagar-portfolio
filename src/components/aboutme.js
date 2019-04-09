@@ -1,6 +1,5 @@
 import {
-  Card,
-  CardContent,
+  Divider,
   Grid,
   MuiThemeProvider,
   Paper,
@@ -11,72 +10,46 @@ import {
 import React, { Component } from "react";
 
 import aboutImg from "../static/images/mf-avatar.jpg";
-import capture from "../static/images/hero.jpg";
 
-const styles = {
+const styles = theme => ({
   title: {
     fontFamily: '"eurostile",  sans-serif',
     color: "#293347",
     fontWeight: "800",
-    fontSize: 45,
+    fontSize: 25,
     display: 'block',
     margin: 'auto'
   },
-  header: {
-    paddingLeft: "30%"
-  },
-  subheading: {
-    paddingLeft: "33%"
-  },
+  about: {
+    fontWeight: 300,
+    fontSize: 20,
+    fontFamily: '"Lato","Helvetica Neue",Helvetica,Arial,sans-serif',
+    textAlign: 'center'
+  }
+  ,
   avatar: {
     width: 210,
-    marginTop: 65,
-    paddingLeft: "40%",
-    paddingBottom: "6%",
   },
   paper: {
-    backgroundColor: "#8C43FF",
+    padding: theme.spacing.unit * 2,
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+    width: '80%',
+    display: 'block'
   },
-  intro: {
-    color: "#fff",
-    paddingLeft: "36%",
-    fontFamily: '"europa",  sans-serif',
-    fontWeight: 600,
-    paddingTop: "5%",
-    display: 'block',
-    margin: 'auto'
-  },
-  aboutus: {
-    color: "#fff",
-    paddingLeft: "25%",
-    fontSize: 17,
-    lineHeight: 1.5,
-    paddingBottom: "5%",
-    display: 'block',
-    margin: 'auto'
-  },
-  avatarDiscription: {
-    marginBottom: "-5",
-    maxWidth: 860,
-    height: 430,
-    display: 'block',
-    margin: 'auto'
-  },
-  card: {
-   
-    height: 430,
-    display: 'block',
-    margin: 'auto'
-  },
-
-};
+  papertext: {
+    fontWeight: 300,
+    fontSize: 20,
+    fontFamily: '"Lato","Helvetica Neue",Helvetica,Arial,sans-serif',
+    textAlign: 'center'
+  }
+});
 function typographyV1Theme(theme) {
   return createMuiTheme({
     ...theme,
     typography: {
       fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
       fontSize: 9,
-
     }
   });
 }
@@ -87,56 +60,74 @@ class About extends Component {
 
     return (
       <React.Fragment>
+
         <MuiThemeProvider theme={typographyV1Theme}>
-          <Grid container>
-            <Grid item xs={12} className={classes.header}>
+
+          <Grid container Justify="center" style={{ textAlign: 'center' }}>
+            <Grid item xs={12} md={12} sm={12} className={classes.header}>
               <Typography
-                component="h1"
+                component="h5"
                 className={classes.title}
-                variant="heading"
+                variant="subheading"
                 gutterBottom
               >
                 Designer, Front-end Developer
               </Typography>
             </Grid>
-            <Grid item xs={12} className={classes.subheading}>
+            <Grid item xs={12} sm={12} md={12} className={classes.subheading}>
               <Typography
                 component="h6"
                 className="subheading"
                 variant="display1"
               >
-                I design and code beautifully simple things, and I love what I
-                do.
+                I design and code beautifully simple things, and I love what
+                I do.
               </Typography>
             </Grid>
-            <Grid item xs={12}>
-              <img className={classes.avatar} src={aboutImg} alt="about-img" />
-            </Grid>
-            <img className={classes.avatarDiscription} src={capture} alt="avatar-img" />
           </Grid>
-        </MuiThemeProvider>
-        <Paper className={classes.paper} elevation={1}>
 
-          <Typography variant="h4" className={classes.intro} component="h5">
-            Hi, I’m Sagar. Nice to meet you.
-          </Typography>
-          <Typography
-            component="p"
-            className={classes.aboutus}
-            variant="Body"
-          >
-            <pre>
-              {`            Since beginning my journey as a Software developer nearly 1 years
-               ago, I've done  work for Figmd Inc, on different project,
-            and Worked with talented people to create Frontend and backed 
-              Functionality for products for both business and consumer use.
-            I'm quietly confident,naturally curious, and perpetually working 
-                on improving my chop one design problem at a time.
-                `}
-            </pre>
-          </Typography>
-        </Paper>
-       
+
+          <Grid container justify="center" style={{ textAlign: 'center' }}>
+            <Grid item xs={12}>
+              <img
+                className={classes.avatar}
+                src={aboutImg}
+                alt="about-img"
+              />
+            </Grid>
+            <Typography style={{ fontSize: 20, marginTop: '1%' }} variant="display1">
+              I enjoy turning complex problems into simple, beautiful and intuitive designs.<br />
+              When I'm not coding, tweeting or pushing pixels,you'll find me Hiking, Reading <br />
+              or Playing Football in the park.
+            </Typography>
+          </Grid>
+
+          <Divider />
+          <Grid container Justify="center" spacing={16} style={{ textAlign: 'center', paddingTop: '1%', }}>
+            <Grid item xs={12} sm={12} md={12}>
+              <Typography gutterBottom component="h5" variant="subheading" style={{ fontWeight: 800, fontSize: 25, fontFamily: '"eurostile",  sans-serif' }}> ABOUT ME </Typography>
+            </Grid>
+          </Grid>
+          <Grid container spacing={24}>
+
+
+            <Grid item xs={12} style={{ padding: 50, paddingLeft: '20%' }}>
+              <Paper className={classes.paper}>
+
+                <p className={classes.papertext}>I have  1 years of experience as a software engineer, and have worked at both small startups and large organizations.
+           While I'm a  full-stack developer, my expertise is in building  Frontend UI Component and Functionality(React-Redux, API services, and async mechanisms).</p>
+                <p className={classes.papertext}>I love building things. While hard engineering problems are
+                often intrinsically fun to tackle, I'm most attracted to solving
+                 real customer problems with a business justification. I'm looking
+                 for a Frontend or Fullstack role where I can take on on
+                  collaborative team  responsibilites,and gain experience
+             with architecture and project management.</p>
+              </Paper>
+            </Grid>
+          </Grid>
+
+        </MuiThemeProvider>
+
       </React.Fragment>
     );
   }

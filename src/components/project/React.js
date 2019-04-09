@@ -73,7 +73,7 @@ class Reactjs extends React.Component {
             <Card className={classes.card}>
               <CardHeader
                 avatar={
-                  <Avatar aria-label="Recipe" className={classes.avatar}>
+                  <Avatar aria-label="React" className={classes.avatar}>
                     R
                   </Avatar>
                 }
@@ -88,7 +88,7 @@ class Reactjs extends React.Component {
               <CardMedia
                 className={classes.media}
                 image={weather}
-                title="Paella dish"
+                title="Weather"
               />
               <CardContent>
                 
@@ -120,7 +120,7 @@ class Reactjs extends React.Component {
               </CardActions>
               <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
                 <CardContent>
-              <h6>  In this Project we fetch weather data from a api called openweathermap.org 
+              <h6>  In this Project I fetched weather data from a api called openweathermap.org 
                         using fetch request,which display weather information by city & country .etc
                   </h6>
                 </CardContent>
@@ -132,7 +132,7 @@ class Reactjs extends React.Component {
             <Card className={classes.card}>
               <CardHeader
                 avatar={
-                  <Avatar aria-label="Recipe" className={classes.avatar}>
+                  <Avatar aria-label="React" className={classes.avatar}>
                     R
                   </Avatar>
                 }
@@ -147,11 +147,11 @@ class Reactjs extends React.Component {
               <CardMedia
                 className={classes.media}
                 image={website}
-                title="Paella dish"
+                title="React-website"
               />
               <CardContent>
                 
-            <h6>This Is simple React app Using ReactBootstrap.
+            <h6>This Is simple React app Using React-Bootstrap.
                deployed on netlify <Link>https://reactsagar097.netlify.com </Link></h6> 
          
               </CardContent>
@@ -180,8 +180,8 @@ class Reactjs extends React.Component {
               </CardActions>
               <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
                 <CardContent>
-              <h6>  In this Project we fetch weather data from a api called openweathermap.org 
-                        using fetch request,which display weather information by city & country .etc
+              <h6> 
+                       This is Good Example for using of React-Router in React Project
                   </h6>
                 </CardContent>
               </Collapse>

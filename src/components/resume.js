@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 
 import Education from './education';
 import Experience from './experience';
+import Profile from '../assets/img/faces/profilepic.jpg';
 import Skills from './skills';
 
 class Resume extends Component {
@@ -57,9 +58,15 @@ class Resume extends Component {
               <br/>
         <Divider light={false} />
         <Typography style={{ fontWeight: 350, fontSize: 15,color:'white' }}>
-          6. Used project management software JIRA for  agile project management and Bug tracking.
-              
-              </Typography>
+          6. Used project management software JIRA for  agile project management and Bug tracking.  
+        </Typography>
+              <br/>
+        <Divider light={false} />
+
+       <Divider light={false} />
+        <Typography style={{ fontWeight: 350, fontSize: 15,color:'white' }}>
+          7. Deployed Static and Dynamic Websites on Salesforce-Heroku,Netlify,Firebase etc.   
+        </Typography>
               <br/>
         <Divider light={false} />
       </Typography>
@@ -103,7 +110,7 @@ const BE_project = (<Grid styel>
           <Cell col={4}>
             <div style={{textAlign: 'center'}}>
               <img
-                src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
+                src={Profile}
                 alt="avatar"
                 style={{height: '200px'}}
                  />

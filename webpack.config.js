@@ -87,7 +87,7 @@ module.exports = {
       inline: true,
       contentBase: './dist',
       hot:true,
-      port:8092,
+      port:8093,
       historyApiFallback: true,
       open:true,
       watchContentBase: true,

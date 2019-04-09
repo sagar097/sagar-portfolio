@@ -41,10 +41,9 @@ class Resume extends Component {
               </Typography>
               <br/>
         <Divider light={false} />
-        <Typography style={{ fontWeight: 350, fontSize: 15,color:'white' }}>
-          4. Worked on User User-Security two-factor authentication -Using
-          encryption that is no unauthorized access to our system through
-          Credetials.
+        <Typography style={{ fontWeight: 350, fontSize: 15,color:'white' }}> 
+          4. Worked on  User-Security two-factor authentication on Log-in component,
+            using JWT-Token and OTP verification.
               </Typography>
               <br/>
         <Divider light={false} />
@@ -53,7 +52,6 @@ class Resume extends Component {
         <Typography style={{ fontWeight: 350, fontSize: 15,color:'white' }}>
           5. Used Version Control Software: GitLab/Github for Project
           source control, code review, project management, and application monitoring .
-              
               </Typography>
               <br/>
         <Divider light={false} />
@@ -65,7 +63,7 @@ class Resume extends Component {
 
        <Divider light={false} />
         <Typography style={{ fontWeight: 350, fontSize: 15,color:'white' }}>
-          7. Deployed Static and Dynamic Websites on Salesforce-Heroku,Netlify,Firebase etc.   
+          7. Deployed Static  Websites on Salesforce-Heroku,Netlify,Firebase etc.   
         </Typography>
               <br/>
         <Divider light={false} />

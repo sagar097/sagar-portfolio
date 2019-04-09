@@ -15,7 +15,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import ShareIcon from '@material-ui/icons/Share';
 import Typography from '@material-ui/core/Typography';
-import WebpackBabelImage from '../../static/images/Webpack.JPG';
+import WebpackBabelImage from '../../static/images/Webpack.jpg';
 import classnames from 'classnames';
 import red from '@material-ui/core/colors/red';
 import { withStyles } from '@material-ui/core/styles';

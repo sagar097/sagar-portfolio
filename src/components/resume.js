@@ -116,7 +116,7 @@ const BE_project = (<Grid styel>
                  />
             </div>
 
-            <h2 style={{paddingTop: '2em'}}>Sagar Pawar</h2>
+            <h2 style={{paddingTop: '1em'}}>Sagar Pawar</h2>
             <h4 style={{color: 'grey'}}>Programmer</h4>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
             <p>Information Technology Engineer,Software Developer At Figmd Pvt. Ltd., I'm looking to secure entry in a well established professional organization, and leverage my technical and professional expertise to be a long-time asset to the organization's growth.</p>

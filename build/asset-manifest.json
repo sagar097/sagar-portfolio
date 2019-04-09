@@ -1,10 +1,11 @@
 {
   "main.css": "static/css/main.8dab61fa.css",
   "main.css.map": "static/css/main.8dab61fa.css.map",
-  "main.js": "static/js/main.c7f9b944.js",
-  "main.js.map": "static/js/main.c7f9b944.js.map",
+  "main.js": "static/js/main.b7302a6d.js",
+  "main.js.map": "static/js/main.b7302a6d.js.map",
   "static\\media\\Redux.jpg": "static/media/Redux.c4e731ca.jpg",
   "static\\media\\Webpack.JPG": "static/media/Webpack.da16fc2d.JPG",
+  "static\\media\\Website.JPG": "static/media/Website.376ab8c3.JPG",
   "static\\media\\mf-avatar.jpg": "static/media/mf-avatar.39abf450.jpg",
   "static\\media\\profile-bg.jpg": "static/media/profile-bg.baf6b40a.jpg",
   "static\\media\\profilepic.jpg": "static/media/profilepic.f6e6cd69.jpg",
@@ -31,6 +32,5 @@
   "static\\media\\roboto-latin-900.woff": "static/media/roboto-latin-900.8c2ade50.woff",
   "static\\media\\roboto-latin-900.woff2": "static/media/roboto-latin-900.19b7a0ad.woff2",
   "static\\media\\roboto-latin-900italic.woff": "static/media/roboto-latin-900italic.bc833e72.woff",
-  "static\\media\\roboto-latin-900italic.woff2": "static/media/roboto-latin-900italic.7b770d6c.woff2",
-  "static\\media\\website.jpg": "static/media/website.376ab8c3.jpg"
+  "static\\media\\roboto-latin-900italic.woff2": "static/media/roboto-latin-900italic.7b770d6c.woff2"
 }

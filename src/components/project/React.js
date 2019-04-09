@@ -17,7 +17,7 @@ import ShareIcon from '@material-ui/icons/Share';
 import classnames from 'classnames';
 import red from '@material-ui/core/colors/red';
 import weather  from '../../static/images/weather.jpg';
-import website  from '../../static/images/website.jpg';
+import website  from '../../static/images/Website.JPG';
 
 const styles = theme => ({
   card: {

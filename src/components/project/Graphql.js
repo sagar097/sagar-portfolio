@@ -1,3 +1,5 @@
+import { Link, Tooltip, withStyles } from '@material-ui/core';
+
 import Avatar from '@material-ui/core/Avatar';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -7,16 +9,15 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Collapse from '@material-ui/core/Collapse';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import GraphqlImage  from '../../static/images/cards/Graphql.jpg';
 import IconButton from '@material-ui/core/IconButton';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-import NodeImage  from '../../static/images/cards/Node.jpg';
 import PropTypes from 'prop-types';
 import React from 'react';
 import ShareIcon from '@material-ui/icons/Share';
 import Typography from '@material-ui/core/Typography';
 import classnames from 'classnames';
 import red from '@material-ui/core/colors/red';
-import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
   card: {
@@ -59,7 +60,7 @@ class Node extends React.Component {
         <CardHeader
           avatar={
             <Avatar aria-label="Recipe" className={classes.avatar}>
-              N
+              G
             </Avatar>
           }
           action={
@@ -67,18 +68,20 @@ class Node extends React.Component {
               <MoreVertIcon />
             </IconButton>
           }
-          title="NodeJS Project"
+          title="SpaceX Project"
           subheader="September 14, 2018"
         />
         <CardMedia
           className={classes.media}
-          image={NodeImage}
+          image={GraphqlImage}
           title="Paella dish"
         />
         <CardContent>
           <Typography component="p">
-            This impressive paella is a perfect party dish and a fun meal to cook together with your
-            guests. Add 1 cup of frozen peas along with the mussels, if you like.
+         <h6> App using React with GraphQL and Apollo that lists all 
+          launches available in SpaceX API (Deployed on Heroku) .
+          Demo of working app:<a href='https://spacex-react-graphql-app.herokuapp.com/'> 
+           https://spacex-react-graphql-app.herokuapp.com/ </a></h6>
           </Typography>
         </CardContent>
         <CardActions className={classes.actions} disableActionSpacing>
@@ -86,7 +89,11 @@ class Node extends React.Component {
             <FavoriteIcon />
           </IconButton>
           <IconButton aria-label="Share">
-            <ShareIcon />
+            <Tooltip title="Github" aria-label="GitHub">
+              <Link href='https://github.com/sagar097/react-graphql-apollo-app'>
+                <ShareIcon className="share" />
+              </Link>
+            </Tooltip>
           </IconButton>
           <IconButton
             className={classnames(classes.expand, {
@@ -101,29 +108,13 @@ class Node extends React.Component {
         </CardActions>
         <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
           <CardContent>
-            <Typography paragraph>Method:</Typography>
             <Typography paragraph>
-              Heat 1/2 cup of the broth in a pot until simmering, add saffron and set aside for 10
-              minutes.
+            <h6>This app uses Express, 
+            GraphQL and Apollo with React for frontend.
+             It shows all launches done by SpaceX, with individual launch details
+            </h6>
             </Typography>
-            <Typography paragraph>
-              Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over medium-high
-              heat. Add chicken, shrimp and chorizo, and cook, stirring occasionally until lightly
-              browned, 6 to 8 minutes. Transfer shrimp to a large plate and set aside, leaving
-              chicken and chorizo in the pan. Add pimentón, bay leaves, garlic, tomatoes, onion,
-              salt and pepper, and cook, stirring often until thickened and fragrant, about 10
-              minutes. Add saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil.
-            </Typography>
-            <Typography paragraph>
-              Add rice and stir very gently to distribute. Top with artichokes and peppers, and cook
-              without stirring, until most of the liquid is absorbed, 15 to 18 minutes. Reduce heat
-              to medium-low, add reserved shrimp and mussels, tucking them down into the rice, and
-              cook again without stirring, until mussels have opened and rice is just tender, 5 to 7
-              minutes more. (Discard any mussels that don’t open.)
-            </Typography>
-            <Typography>
-              Set aside off of the heat to let rest for 10 minutes, and then serve.
-            </Typography>
+            
           </CardContent>
         </Collapse>
       </Card>

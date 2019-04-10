@@ -69,7 +69,7 @@ class WebpackBabel extends React.Component {
               <MoreVertIcon />
             </IconButton>
           }
-          title="WebpackBabel Project"
+          title="Portfolio"
           subheader="March 14, 2019"
         />
         <CardMedia
@@ -79,7 +79,10 @@ class WebpackBabel extends React.Component {
         />
         <CardContent>
           <Typography component="p">
-             <h6> This is my portfolio using React-Webpack/Babel</h6>
+          <h6> This is My portfolio using React,Webpack and Babel</h6>
+           <h6>deploy on netlify:
+            <a href='https://sagar-pawar-react-portfolio.netlify.com'>https://sagar-pawar-react-portfolio.netlify.com</a>
+          </h6>
           </Typography>
         </CardContent>
         <CardActions className={classes.actions} disableActionSpacing>
@@ -106,7 +109,7 @@ class WebpackBabel extends React.Component {
         </CardActions>
         <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
           <CardContent>
-            <h6> React app using Materiail-Ui, Webpack,Babel,React-router,React-mdl</h6>
+            <h6>React app using Materiail-Ui, Webpack,Babel,React-router,React-mdl</h6>
           </CardContent>
         </Collapse>
       </Card>

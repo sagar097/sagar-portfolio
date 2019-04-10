@@ -1,6 +1,6 @@
 import AppBar from '@material-ui/core/AppBar';
+import Graphql from './project/Graphql';
 import NoSsr from '@material-ui/core/NoSsr';
-import NodeJs from './project/Node';
 import PropTypes from 'prop-types';
 import React from 'react';
 import ReactJs from './project/React';
@@ -53,14 +53,14 @@ class Projects extends React.Component {
             <Tabs variant="fullWidth" value={value} onChange={this.handleChange}>
               <LinkTab label="React" href="page1" />
               <LinkTab label="Webpack/Babel" href="page2" />
-              <LinkTab label="NodeJs" href="page3" />
+              <LinkTab label="Graph-ql" href="page3" />
               <LinkTab label="Redux" href="page4" />            
             </Tabs>
           </AppBar>
           
           {value === 0 && <TabContainer><ReactJs/></TabContainer>}
           {value === 1 && <TabContainer><WebpackBabel/></TabContainer>}
-          {value === 2 && <TabContainer><NodeJs/></TabContainer>}
+          {value === 2 && <TabContainer><Graphql/></TabContainer>}
           {value === 3 && <TabContainer><Redux/></TabContainer>}
         
         </div>

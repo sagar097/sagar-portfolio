@@ -74,7 +74,7 @@ class Reactjs extends React.Component {
 
     return (
       <Grid container>
-      <Grid item xs={6}>
+      <Grid item xs={4}>
             <Card className={classes.card}>
               <CardHeader
                 avatar={
@@ -87,7 +87,7 @@ class Reactjs extends React.Component {
                     <MoreVertIcon />
                   </IconButton>
                 }
-                title="ReactJS Project"
+                title="Weather-Finder"
                 subheader="Jan 14, 2019"
               />
               <CardMedia
@@ -97,9 +97,10 @@ class Reactjs extends React.Component {
               />
               <CardContent>
                 
-            <h6>This Is simple React app Using ReactBootstrap.
-            firebase-deploy url<Link> https://whetherapp-react.firebaseapp.com/ </Link></h6> 
-              
+            <h6>This Is simple React app Using ReactBootstrap.</h6>
+              <h6>deploy on firebase:
+                   <a href='https://whetherapp-react.firebaseapp.com/'>https://whetherapp-react.firebaseapp.com/</a>
+              </h6>
               </CardContent>
               <CardActions className={classes.actions} disableActionSpacing>
                 <IconButton aria-label="Add to favorites">
@@ -134,7 +135,7 @@ class Reactjs extends React.Component {
             </Card>
       </Grid>
 
-      <Grid item xs={6}>
+      <Grid item xs={5}>
             <Card className={classes.card}>
               <CardHeader
                 avatar={
@@ -147,7 +148,7 @@ class Reactjs extends React.Component {
                     <MoreVertIcon />
                   </IconButton>
                 }
-                title="ReactJS Project"
+                title="React-Codelife"
                 subheader="Feb 03, 2019"
               />
               <CardMedia
@@ -157,9 +158,11 @@ class Reactjs extends React.Component {
               />
               <CardContent>
                 
-            <h6>This Is simple React app Using React-Bootstrap.
-               deployed on netlify <Link>https://reactsagar097.netlify.com </Link></h6> 
-         
+              <h6>This Is simple React app Using ReactBootstrap</h6>
+               <h6>deploy on netlify:
+                   <a href='https://reactsagar097.netlify.com'>https://reactsagar097.netlify.com</a>
+                </h6>
+             
               </CardContent>
               <CardActions className={classes.actions} disableActionSpacing>
                 <IconButton aria-label="Add to favorites">

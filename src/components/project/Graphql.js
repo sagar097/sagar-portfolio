@@ -45,7 +45,7 @@ const styles = theme => ({
   },
 });
 
-class Node extends React.Component {
+class Graphql extends React.Component {
   state = { expanded: false };
 
   handleExpandClick = () => {
@@ -122,8 +122,8 @@ class Node extends React.Component {
   }
 }
 
-Node.propTypes = {
+Graphql.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Node);
+export default withStyles(styles)(Graphql);

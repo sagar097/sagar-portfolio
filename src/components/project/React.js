@@ -55,12 +55,17 @@ class Reactjs extends React.Component {
 
     this.state = {
         active: true,
-        expanded: false
+        expanded: false,
+        expanded1:false
     };
 }
 
   handleExpandClick = () => {
     this.setState(state => ({ expanded: !state.expanded }));
+  };
+
+  handleExpandClick1 = () => {
+    this.setState(state => ({ expanded1: !state.expanded1 }));
   };
 
  
@@ -114,6 +119,7 @@ class Reactjs extends React.Component {
                   onClick={this.handleExpandClick}
                   aria-expanded={this.state.expanded}
                   aria-label="Show more"
+                  id='1'
                 >
                   <ExpandMoreIcon />
                 </IconButton>
@@ -169,16 +175,17 @@ class Reactjs extends React.Component {
                 </IconButton>
                 <IconButton
                   className={classnames(classes.expand, {
-                    [classes.expandOpen]: this.state.expanded,
+                    [classes.expandOpen]: this.state.expanded1,
                   })}
-                  onClick={this.handleExpandClick}
-                  aria-expanded={this.state.expanded}
+                  onClick={this.handleExpandClick1}
+                  aria-expanded={this.state.expanded1}
                   aria-label="Show more"
+                  id='2'
                   >
                       <ExpandMoreIcon />
                 </IconButton>
               </CardActions>
-              <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
+              <Collapse in={this.state.expanded1} timeout="auto" unmountOnExit>
                 <CardContent>
               <h6> 
                        This is Good Example for using of React-Router in React Project

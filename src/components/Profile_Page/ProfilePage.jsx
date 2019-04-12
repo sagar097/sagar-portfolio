@@ -1,5 +1,5 @@
 import {Card, CardContent, Divider, Link, Typography} from "@material-ui/core";
-
+import AdBanner from "../Advert/ad";
 import Button from "./CustomButtons/Button.jsx";
 // @material-ui/icons
 import Camera from "@material-ui/icons/Camera";
@@ -32,6 +32,7 @@ class ProfilePage extends React.Component {
       <div>
         <Parallax small filter image={require("../../assets/img/profile-bg.jpg")} />
         <div className={classNames(classes.main, classes.mainRaised)}>
+           <AdBanner slot='3161205038' /> 
           <div>
             <div className={classes.container}>
               <GridContainer justify="center">

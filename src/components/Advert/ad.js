@@ -9,8 +9,7 @@ export default class Ad extends React.Component {
 
     render() {
 
-    
-        return (
+          return (
             <div className='ad'>
 
                 <ins className="adsbygoogle"

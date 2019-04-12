@@ -87,6 +87,7 @@ class ProfilePage extends React.Component {
                         tabButton: "Toolbox",
                         tabIcon: Camera,
                         tabContent: (
+                          <div style={{overflow: 'hidden'}}>
                           <GridContainer justify="center"  style={{ display:'block'}}>
                             <GridItem xs={12} sm={12} md={12} >
                               <Card justify style={{ minWidth: 425}} >
@@ -135,12 +136,14 @@ class ProfilePage extends React.Component {
                               </Card>
                             </GridItem>
                           </GridContainer>
+                          </div>
                         )
                       },
                       {
                         tabButton: "Learning",
                         tabIcon: Palette,
                         tabContent: (
+                          <div style={{overflow: 'hidden'}}>
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={4}>
                               <Card justify style={{ minWidth: 100}} >
@@ -166,12 +169,14 @@ class ProfilePage extends React.Component {
                               </Card>
                             </GridItem>
                           </GridContainer>
+                          </div>
                         )
                       },
                       {
                         tabButton: "Hacking On",
                         tabIcon: Favorite,
                         tabContent: (
+                          <div style={{overflow: 'hidden'}}>
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={12}>
                               <Card justify style={{ minWidth: 250 }} >
@@ -206,6 +211,7 @@ class ProfilePage extends React.Component {
                   />
                 </GridItem>
               </GridContainer>
+             </div>   
             </div>
           </div>
         </div>

@@ -205,13 +205,13 @@ class ProfilePage extends React.Component {
                               
                             </GridItem>
                           </GridContainer>
+                          </div>
                         )
                       }
                     ]}
                   />
                 </GridItem>
-              </GridContainer>
-             </div>   
+              </GridContainer>   
             </div>
           </div>
         </div>

@@ -67,9 +67,9 @@ class ProfilePage extends React.Component {
                   project, and Worked with talented people to
                   and backed Functionality for products for both business and
                   consumer use. I am quietly confident,naturally curious, and
-                  curious, and working on improving my chop one design problem
-                  at a time.On my free time, I am building web applications
-                  through the FreeCodeCamp/Github/Materia-Ui an open source coding
+                  working on improving my chop one design problem at a time.
+                  On my free time, I am building web applications through
+                  the FreeCodeCamp/Github/Materia-Ui an open source coding
                   community. On top of That,  listen to engineering podcasts,
                   read and write tech blogs, and take other online courses in
                   order to help me develop a growth mindset and become a better
@@ -107,7 +107,7 @@ class ProfilePage extends React.Component {
                                     <Typography style={{ fontWeight: 500, fontSize: 15 }}>
                                       IDE:
                                     </Typography>
-                                    <Typography style={{ fontWeight: 250, fontSize: 15 }}> Microsoft VS Code </Typography>
+                                    <Typography style={{ fontWeight: 250, fontSize: 15 }}> Microsoft VS Code,Eclipse </Typography>
                                   </Typography>
                                   <Typography component="div">
                                     <Typography style={{ fontWeight: 500, fontSize: 15 }}>
@@ -117,10 +117,10 @@ class ProfilePage extends React.Component {
                                     </Typography>
                                   <Typography component="div">
                                     <Typography style={{ fontWeight: 500, fontSize: 15 }}>
-                                      PMS:
+                                      PMS and Other:
                                     </Typography>
                                     <Typography style={{ fontWeight: 350, fontSize: 14 }}>
-                                     <Typography style={{ fontWeight: 250, fontSize: 15 }}>   JIRA </Typography>
+                                     <Typography style={{ fontWeight: 250, fontSize: 15 }}>JIRA,Firebase</Typography>
                                     </Typography>
                                   </Typography>
                                   <Typography component="div">
